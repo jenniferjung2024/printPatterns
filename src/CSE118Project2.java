@@ -104,7 +104,7 @@ public class CSE118Project2 {
 			else if (userOption == 3) {
 			
 			}
-			else {
+			else {   // data validation for anything other than 1-3 and also 4
 				System.out.println("Option not valid.\n");
 				printMenu();
 				System.out.print(">>> Re-enter option: ");
