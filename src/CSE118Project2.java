@@ -19,7 +19,7 @@ public class CSE118Project2 {
 		
 		int userOption = scnr.nextInt();
 		
-		while (userOption != 4) {
+		while (userOption < 1 || userOption > 4) {
 			System.out.println("Option not valid.\n");
 			printMenu();
 			System.out.print(">>> Re-enter option: ");
@@ -27,6 +27,28 @@ public class CSE118Project2 {
 		}
 		
 		if (userOption == 1) {
+			
+			System.out.print("Enter a number from 1 to 9: ");
+			int userSelection = scnr.nextInt(); 
+			
+			while (userSelection < 1 || userSelection > 9) {
+				System.out.println("Selection not valid.");
+				System.out.print(">>> Type a number from 1 to 9: ");
+				userSelection = scnr.nextInt();
+			}
+			
+			System.out.println("\n(1A)");
+
+			for (int index = 1; index <= userSelection; ++index) {
+				
+	            for (int j = 1; j <= index; j++) { 
+	                System.out.print(index + " "); 
+	            } 
+	  
+	            // for new line after printing each row 
+	            System.out.println();				
+			}
+			
 			
 		}
 		else if (userOption == 2) {
